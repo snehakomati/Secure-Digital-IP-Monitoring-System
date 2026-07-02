@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Digital IP Monitoring System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div>
+        <h1>🛡 Secure Digital IP Monitoring System</h1>
+        <p>AI-powered intellectual property protection and cybersecurity risk monitoring</p>
+    </div>
+    <span class="version">Version 1.0</span>
+</header>
+
+<main class="page">
+
+    <section class="upload-panel">
+        <div class="panel">
+            <h2>Document Analysis</h2>
+
+            {% if error %}
+                <div class="error">{{ error }}</div>
+            {% endif %}
+
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <label>Protected IP Document</label>
+                <input type="file" name="protected_file" required>
+
+                <label>Suspect Document</label>
+                <input type="file" name="suspect_file" required>
+
+                <button type="submit">Analyze IP Risk</button>
+            </form>
+        </div>
+
+        <div class="panel">
+            <h2>System Capabilities</h2>
+            <ul>
+                <li>AI-based content similarity detection</li>
+                <li>Suspicious access pattern monitoring</li>
+                <li>SHA-256 integrity verification</li>
+                <li>Automated PDF investigation reporting</li>
+                <li>IP-specific security recommendations</li>
+            </ul>
+        </div>
+    </section>
+
+    {% if similarity %}
+    <section class="executive-summary">
+        <h2>Executive Security Summary</h2>
+        <p class="timestamp">Analysis Completed: {{ analysis_time }}</p>
+
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h3>Similarity</h3>
+                <p>{{ similarity }}%</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Risk Score</h3>
+                <p>{{ risk }}/100</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Threat</h3>
+                {% if threat == "HIGH" %}
+                    <p class="badge high">🔴 HIGH</p>
+                {% elif threat == "MEDIUM" %}
+                    <p class="badge medium">🟡 MEDIUM</p>
+                {% else %}
+                    <p class="badge low">🟢 LOW</p>
+                {% endif %}
+            </div>
+
+            <div class="summary-card">
+                <h3>Integrity</h3>
+                {% if integrity_status == "Verified" %}
+                    <p class="integrity-good">✅ Verified</p>
+                {% else %}
+                    <p class="integrity-bad">❌ Modified</p>
+                {% endif %}
+            </div>
+
+            <div class="summary-card">
+                <h3>Alerts</h3>
+                <p>{{ alert_count }}</p>
+            </div>
+        </div>
+
+        {% if pdf_available %}
+            <a href="/download-report" class="download-btn">📄 Download PDF Report</a>
+        {% endif %}
+    </section>
+
+    <section class="analysis-layout">
+
+        <div class="panel">
+            <h2>AI Security Explanation</h2>
+            <div class="explanation-box">
+                <p>{{ explanation }}</p>
+            </div>
+
+            <h2>Document Integrity Verification</h2>
+            <div class="integrity-box">
+                <p><strong>Original SHA-256:</strong> {{ original_hash[:32] }}...</p>
+                <p><strong>Uploaded SHA-256:</strong> {{ uploaded_hash[:32] }}...</p>
+
+                {% if integrity_status == "Verified" %}
+                    <p class="integrity-good">✅ Status: Verified</p>
+                {% else %}
+                    <p class="integrity-bad">❌ Status: Modified</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Detected Alerts</h2>
+            <ul class="alert-list">
+                {% for alert in alerts %}
+                    <li>⚠️ {{ alert }}</li>
+                {% endfor %}
+            </ul>
+
+            <h2>Recommended Actions</h2>
+            <ul class="recommendations">
+                {% for recommendation in recommendations %}
+                    <li>✅ {{ recommendation }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </section>
+    {% endif %}
+
+</main>
+
+<footer>
+    <p>Secure Digital IP Monitoring System • Version 1.0</p>
+    <p>Developed by Komati Damarika Sneha Latha Sree</p>
+</footer>
+
+</body>
+</html>
