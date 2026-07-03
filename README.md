@@ -552,14 +552,6 @@ The system provides IP-specific security recommendations such as:
 
 # 📸 Screenshot Gallery
 
-| Home | Detection |
-|------|-----------|
-| ![](screenshots/home.png) | ![](screenshots/detection.png) |
-
-| Results | Dashboard |
-|---------|-----------|
-| ![](screenshots/results.png) | ![](screenshots/dashboard.png) |
-
 ## Dashboard interface
 
 ![Dashboard](Screenshots/Whole_Dashboard1.png)
@@ -813,10 +805,6 @@ This improves usability for both technical and non-technical users.
 ---
 
 # 📄 PDF Investigation Report
-
-- [Project Report PDF](docs/Project_Report.pdf)
-
-- [Project Report DOCX](docs/Project_Report.docx)
 
 The generated report contains:
 
@@ -1170,6 +1158,10 @@ Immediate investigation recommended.
 ---
 
 # 📄 pdf_report.py
+
+- [Project Report PDF](docs/Project_Report.pdf)
+
+- [Project Report DOCX](docs/Project_Report.docx)
 
 ## Purpose
 
