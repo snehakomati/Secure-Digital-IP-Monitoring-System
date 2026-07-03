@@ -452,8 +452,6 @@ Every investigation concludes with a structured report suitable for documentatio
 
 ---
 
----
-
 # 🖥️ Dashboard Walkthrough
 
 The dashboard is designed to present investigation results in a clear, executive-friendly format. Instead of showing raw technical output only, the interface summarizes risk indicators, explains the reason behind the score, and provides actionable security recommendations.
@@ -602,8 +600,6 @@ The downloadable investigation report includes:
 - Recommended actions
 
 This makes the system suitable for structured incident documentation.
-
----
 
 ---
 
@@ -896,8 +892,6 @@ Expected Result
 - Preserve access logs for behavioral analysis.
 - Download the generated PDF after every investigation.
 - Keep original documents unchanged for reliable integrity verification.
-
----
 
 ---
 
