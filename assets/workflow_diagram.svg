@@ -1,0 +1,13 @@
+<svg width="1400" height="680" viewBox="0 0 1400 680" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker></defs><rect width="1400" height="680" fill="#ffffff"/><text x="700" y="58" text-anchor="middle" font-family="Inter,Arial" font-size="42" font-weight="800" fill="#111827">Secure Digital IP - Workflow Diagram</text>
+<g font-family="Inter,Arial">
+  <g font-size="20" font-weight="800" fill="#111827">
+    <rect x="70" y="160" width="180" height="95" rx="20" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/><text x="160" y="198" text-anchor="middle">1. Submit</text><text x="160" y="227" text-anchor="middle" font-size="15" font-weight="500">Digital content</text>
+    <rect x="315" y="160" width="190" height="95" rx="20" fill="#f5f3ff" stroke="#7c3aed" stroke-width="3"/><text x="410" y="198" text-anchor="middle">2. Clean</text><text x="410" y="227" text-anchor="middle" font-size="15" font-weight="500">Normalize text</text>
+    <rect x="570" y="160" width="190" height="95" rx="20" fill="#ecfdf5" stroke="#16a34a" stroke-width="3"/><text x="665" y="198" text-anchor="middle">3. Fingerprint</text><text x="665" y="227" text-anchor="middle" font-size="15" font-weight="500">SHA-256 hash</text>
+    <rect x="825" y="160" width="190" height="95" rx="20" fill="#fff7ed" stroke="#ea580c" stroke-width="3"/><text x="920" y="198" text-anchor="middle">4. Vectorize</text><text x="920" y="227" text-anchor="middle" font-size="15" font-weight="500">TF-IDF</text>
+    <rect x="1080" y="160" width="220" height="95" rx="20" fill="#fef2f2" stroke="#dc2626" stroke-width="3"/><text x="1190" y="198" text-anchor="middle">5. Compare</text><text x="1190" y="227" text-anchor="middle" font-size="15" font-weight="500">Similarity score</text>
+    <rect x="530" y="390" width="340" height="120" rx="24" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/><text x="700" y="438" text-anchor="middle">6. Generate Result</text><text x="700" y="473" text-anchor="middle" font-size="16" font-weight="500">Original / Similar / Potential IP overlap</text>
+  </g>
+</g><g stroke="#2563eb" stroke-width="4" marker-end="url(#arr)" fill="none"><path d="M250 207 H315"/><path d="M505 207 H570"/><path d="M760 207 H825"/><path d="M1015 207 H1080"/><path d="M1190 255 C1190 340 870 340 790 390"/><path d="M610 390 C500 335 160 340 160 255"/></g>
+<text x="700" y="600" text-anchor="middle" font-family="Inter,Arial" font-size="22" fill="#475569">Designed for explainability: each result is backed by content fingerprinting and text similarity analysis.</text></svg>

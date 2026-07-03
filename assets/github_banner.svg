@@ -1,0 +1,29 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="0.55" stop-color="#111827"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#93c5fd" stroke-width="1">
+    <path d="M0 80 H1600M0 160 H1600M0 240 H1600M0 320 H1600M0 400 H1600"/>
+    <path d="M120 0 V500M280 0 V500M440 0 V500M600 0 V500M760 0 V500M920 0 V500M1080 0 V500M1240 0 V500M1400 0 V500"/>
+  </g>
+  <g transform="translate(1080 80)" opacity="0.88">
+    <rect x="0" y="70" width="340" height="230" rx="28" fill="#020617" stroke="#38bdf8" stroke-width="4" filter="url(#glow)"/>
+    <path d="M80 70 v-35 c0-60 180-60 180 0v35" fill="none" stroke="#a78bfa" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="170" cy="185" r="36" fill="url(#acc)"/>
+    <rect x="158" y="215" width="24" height="58" rx="8" fill="url(#acc)"/>
+  </g>
+  <g transform="translate(90 120)">
+    <text x="0" y="0" fill="#e0f2fe" font-family="Inter, Segoe UI, Arial" font-size="38" font-weight="700" letter-spacing="4">CYBERSECURITY PROJECT</text>
+    <text x="0" y="88" fill="#ffffff" font-family="Inter, Segoe UI, Arial" font-size="78" font-weight="800">Secure Digital IP</text>
+    <text x="0" y="148" fill="#cbd5e1" font-family="Inter, Segoe UI, Arial" font-size="34">Digital content fingerprinting, similarity detection and ownership verification</text>
+    <rect x="0" y="195" width="720" height="70" rx="35" fill="url(#acc)" opacity="0.95"/>
+    <text x="38" y="242" fill="#020617" font-family="Inter, Segoe UI, Arial" font-size="30" font-weight="800">Flask • TF-IDF • SHA-256 • IP Protection • Portfolio Project</text>
+  </g>
+  <g opacity="0.8">
+    <circle cx="1320" cy="385" r="7" fill="#38bdf8"/><circle cx="1390" cy="420" r="5" fill="#a78bfa"/><circle cx="1180" cy="410" r="5" fill="#38bdf8"/>
+    <path d="M1180 410 L1320 385 L1390 420" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+</svg>

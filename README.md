@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/banner.png" width="100%">
+</p>
 <div align="center">
 
 # 🛡️ Secure Digital IP Monitoring System
@@ -123,6 +126,10 @@ It demonstrates practical implementation of concepts used in:
 
 The Secure Digital IP Monitoring System follows a modular architecture where each component performs a specific security task before collectively producing an overall investigation report.
 
+<p align="center">
+<img src="assets/architecture.png" width="90%">
+</p>
+
 ```mermaid
 flowchart TD
 
@@ -184,6 +191,12 @@ This modular approach improves maintainability and allows future security module
 # 🔄 Project Workflow
 
 The investigation workflow follows six major stages.
+
+## 🔄 Workflow
+
+<p align="center">
+<img src="assets/workflow.png" width="90%">
+</p>
 
 ```mermaid
 flowchart LR
@@ -539,6 +552,14 @@ The system provides IP-specific security recommendations such as:
 
 # 📸 Screenshot Gallery
 
+| Home | Detection |
+|------|-----------|
+| ![](screenshots/home.png) | ![](screenshots/detection.png) |
+
+| Results | Dashboard |
+|---------|-----------|
+| ![](screenshots/results.png) | ![](screenshots/dashboard.png) |
+
 ## Dashboard interface
 
 ![Dashboard](Screenshots/Whole_Dashboard1.png)
@@ -792,6 +813,10 @@ This improves usability for both technical and non-technical users.
 ---
 
 # 📄 PDF Investigation Report
+
+- [Project Report PDF](docs/Project_Report.pdf)
+
+- [Project Report DOCX](docs/Project_Report.docx)
 
 The generated report contains:
 
