@@ -541,17 +541,17 @@ The system provides IP-specific security recommendations such as:
 
 # 📸 Screenshot Gallery
 
-## Hero Dashboard
+## Dashboard interface
 
-![Hero Dashboard](Screenshots/01_Hero_Dashboard.png)
+![Dashboard](Screenshots/Whole_Dashboard1.png)
 
-The Hero Dashboard shows the document upload panel and the Executive Security Summary.
+The Dashboard shows the document upload panel and the Executive Security Summary.
 
 ---
 
 ## AI Analysis and Integrity Verification
 
-![AI Analysis](Screenshots/02_AI_Analysis.png)
+![AI Analysis](Screenshots/Whole_Dashboard2.png)
 
 This screenshot displays the AI Security Explanation and SHA-256 Integrity Verification results.
 
@@ -559,7 +559,7 @@ This screenshot displays the AI Security Explanation and SHA-256 Integrity Verif
 
 ## Alerts and Recommendations
 
-![Alerts and Recommendations](Screenshots/03_Alerts_Recommendations.png)
+![Alerts and Recommendations](Screenshots/Whole_Dashboard3.png)
 
 This section shows detected suspicious access alerts and recommended mitigation actions.
 
@@ -567,7 +567,7 @@ This section shows detected suspicious access alerts and recommended mitigation 
 
 ## Generated PDF Investigation Report
 
-![PDF Report](Screenshots/04_Investigation_Report.png)
+![PDF Report](Screenshots/Investigation-Report.png)
 
 The generated PDF report preserves investigation findings in a portable format suitable for review, audit, or documentation.
 
@@ -1294,8 +1294,6 @@ Future optimization may include
 
 ---
 
----
-
 # 🚀 Future Roadmap
 
 Although the current implementation demonstrates a complete investigation workflow, several enhancements can further transform this project into an enterprise-grade intellectual property protection platform.
@@ -1467,33 +1465,6 @@ This project demonstrates practical knowledge of:
 - Documentation
 - Version Control
 - Report Automation
-
----
-
-# 🎯 Resume Project Summary
-
-**Secure Digital IP Monitoring System | Python, Flask, Cybersecurity, AI**
-
-Developed an AI-powered cybersecurity web application to protect intellectual property by combining TF-IDF document similarity analysis, SHA-256 integrity verification, behavioral monitoring, rule-based risk assessment, and automated PDF investigation reporting. Designed a modular Flask application with an executive dashboard for visualizing investigation results and supporting digital evidence preservation.
-
----
-
-# 🎤 Interview Preparation
-
-Possible interview questions based on this project include:
-
-- Why did you choose TF-IDF instead of transformer-based embeddings?
-- Why is Cosine Similarity suitable for document comparison?
-- Why was SHA-256 selected for integrity verification?
-- How is the overall risk score calculated?
-- How would you improve the access monitoring module?
-- How could this project scale to enterprise environments?
-- How would you integrate this project with a SIEM?
-- What are the limitations of the current implementation?
-- How could machine learning improve suspicious activity detection?
-- How would you deploy this application securely?
-
-Preparing answers to these questions will help explain both the technical implementation and the design decisions behind the project.
 
 ---
 
